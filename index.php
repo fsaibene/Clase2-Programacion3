@@ -29,7 +29,10 @@
 	}
 	$arrayProducto = array("Pizza"=>20,"Cerveza"=>30,"Faina"=>10);
 	echo $arrayProducto["Pizza"];
+	$arrayNuevo[2]="Apellido = Saibene";
 	var_dump($arrayProducto);
+
+
 	?>
 </body>
 </html>
