@@ -5,6 +5,9 @@
 <body>
 	Fernando Saibene
 	<?php
+
+require_once "alumno.php";
+//require "mascota.php";
 	echo "<h1>Hola Mundo</h1>";
 	$nombre="Fernando";
 	echo $nombre;
@@ -29,9 +32,32 @@
 	}
 	$arrayProducto = array("Pizza"=>20,"Cerveza"=>30,"Faina"=>10);
 	echo $arrayProducto["Pizza"];
+	echo "<br>";
 	$arrayNuevo[2]="Apellido = Saibene";
+	echo "<br>";
+	var_dump($arrayProducto);
+echo "<br>";
+	$miObjeto= new stdclass();
+	$miObjeto->nombre="Fer";
+	$miObjeto->producto=$arrayProducto;
+
+	var_dump($miObjeto);
+
+	$arrayObjetos= array();
+	$arrayObjetos["nombre"]="Fernandito";
+	$arrayObjetos["producto"]=$arrayProducto;
+
+	echo "<br>";
+	var_dump($arrayObjetos);
+	echo "<br>";
 	var_dump($arrayProducto);
 
+	
+
+	$nuevoAlumno= new alumno();
+	//$nuevoAlumno->Mostrar();
+	alumno::MostrarAlumno($nuevoAlumno);
+	
 
 	?>
 </body>
